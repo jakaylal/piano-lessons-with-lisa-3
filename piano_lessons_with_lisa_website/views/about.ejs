@@ -12,7 +12,8 @@
     background: linear-gradient(135deg, #eef2ff, #f8fafc);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     margin: 0;
   }
 
@@ -90,6 +91,10 @@
   }
 
   @media (max-width: 768px) {
+    .container {
+      padding-bottom: 1rem;
+    }
+
     .navbar {
       padding: 0.5rem 0.75rem;
     }
