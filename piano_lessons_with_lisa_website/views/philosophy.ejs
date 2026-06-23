@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philosophy</title>
+  <link rel="icon" type="image/x-icon" href="/images/download (5).jpg">
+  <!--Style Section-->
+  <style>
+
+  body {
+    background: linear-gradient(to bottom, #f8fafc, #eef2ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  /* Navbar */
+  .navbar {
+    background: rgba(255,255,255,0.85) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 0.6rem 1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-link {
+    transition: all 0.3s ease;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .nav-link:hover {
+    color: #4f46e5 !important;
+    transform: translateY(-2px);
+  }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    height: 34vh;
+    min-height: 180px;
+    max-height: 240px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    line-height: 1.05;
+    margin: 0;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 0.4rem;
+  }
+
+  /* BUTTON */
+  .btn-custom {
+    background: #4f46e5;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.3s;
+  }
+
+  .btn-custom:hover {
+    background: #4338ca;
+    transform: translateY(-3px);
+  }
+
+  /* SECTION */
+  .section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px 10px;
+  }
+
+  /* CARD */
+  .philosophy-card {
+    background: white;
+    border-radius: 18px;
+    padding: 16px 18px;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .philosophy-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .philosophy-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #475569;
+    margin-bottom: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+  }
+
+  .philosophy-grid {
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .site-footer {
+    margin-top: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  /* Fade animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      height: 26vh;
+      min-height: 150px;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+
+    .hero-text p {
+      font-size: 0.95rem;
+    }
+
+    .section {
+      padding: 16px 12px;
+    }
+
+    .info-card {
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+    }
+
+    .navbar {
+      padding: 0.5rem 0.75rem;
+    }
+
+    .navbar-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-link {
+      padding: 0.25rem 0.4rem;
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Piano Lessons with Lisa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/philosophy">Philosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/index">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/howto">Getting Started</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mystudents">My Students</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<!--Image-->
+<div class="d-flex justify-content-center">
+  <div class="hero">
+  <img src="https://hidraupianobenches.com/wp-content/uploads/2022/03/8-Most-Popular-Piano-Songs-to-Learn.jpg">
+
+  <div class="hero-text fade-in">
+    <h2>Philosophy and Approach</h2>
+  </div>
+</div>
+</div>
+<!--Jumbotron-->
+<div class="section fade-in">
+  <div class="container">
+    <div class="row g-4 philosophy-grid mx-auto">
+      <div class="col-md-6">
+        <div class="philosophy-card">
+          <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"class="title">I Believe That All People are Musical</h1>
+          <p class="philosophy-text">
+            We all show up with different skills and deficits. Let's fill in the deficits and nurture the skills together.
+            While each of my student's piano education is individualized, I do have a multifaceted approach encompassing three main concepts:
+          </p>
+          <p class="philosophy-text" style="font-style: italic;">1. The aural experience: What kind of sound am I making with my instrument?</p>
+          <p class="philosophy-text" style="font-style: italic;">2. The physical experience: Do I have freedom, comfort, and ease while playing my instrument?</p>
+          <p class="philosophy-text" style="font-style: italic;">3. The spatial experience: In our instance, as it relates to the reading of music and the geography of the keyboard.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="philosophy-card">
+          <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"class="title">My Approach</h1>
+          <p style="font-size: larger;" class="philosophy-text">
+            My approach is contingent first and foremost upon nurturing a curiosity, love, and enjoyment of playing the piano.
+            Learning to play the piano is both an adventure and a journey — let's experience the process together!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Divider-->
+<div class="b-example-divider"></div>
+<div class="container">
+  <footer class="site-footer d-flex flex-wrap justify-content-between align-items-center py-2 my-2 border-top"> 
+    <div class="col-md-4 d-flex align-items-center"> <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> 
+      <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"></use></svg> 
+    </a> <span class="mb-3 mb-md-0 text-body-secondary">© 2026</span> 
+  </div> <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram">
+    <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"></use></svg></a></li> 
+    <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a>
+    </li> </ul> 
+  </footer> </div>
+
+<!--Media (Video)-->
+
+  
+  
+
+
+</body>
+</html>
